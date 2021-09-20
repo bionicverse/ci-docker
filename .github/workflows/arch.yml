@@ -8,7 +8,7 @@ name: arch_build_kernel
 on:
   schedule:
     - cron: '33 10 * * *'
-  push:
+  workflow_dispatch:
     branches: workflow_dispatch
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
