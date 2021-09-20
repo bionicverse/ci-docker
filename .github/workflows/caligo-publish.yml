@@ -8,8 +8,7 @@ name: caligo_docker
 on:
   schedule:
     - cron: '33 10 * * *'
-  push:
-    branches: workflow_dispatch
+  workflow_dispatch:
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
   pull_request:
